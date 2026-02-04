@@ -1,0 +1,14 @@
+# ユーザー専用の指示ファイル
+ai_instructions.md
+
+# MCP設定（シークレットキー含む）
+.mcp.json
+
+# タスク管理設定（リポジトリ固有の設定）
+.claude/task-config.json
+
+# GitHub App設定（Private Key含む）
+.claude/config/
+
+# Windows Zone.Identifierファイル
+*:Zone.Identifier
