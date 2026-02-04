@@ -95,9 +95,26 @@ mkdir -p docs/app/42_add-user-auth       # アプリ開発の場合
 
 1. 変更をコミット・プッシュ
 2. PR作成（`Closes #番号` を含める → マージ時にIssue自動Close）
+3. **Issueに成果物リンクを追記**（調査レポート、ドキュメント等がある場合）
 
 ```bash
 gh pr create --repo "$REPO" --title "feat: 機能説明 (#42)" --body "Closes #42" --base main
+
+# 成果物リンクをIssueに追記
+gh issue edit 42 --repo "$REPO" --body "$(gh issue view 42 --repo "$REPO" --json body -q .body)
+
+## 成果物
+- [調査レポート](docs/research/42_task-name/README.md)"
+```
+
+### 成果物リンクの追記ルール
+
+タスク完了時、成果物（調査レポート、設計書、ドキュメント等）がある場合は、Issueの本文に「## 成果物」セクションを追加し、リンクを記載する。
+
+```markdown
+## 成果物
+- [調査レポート](docs/research/{issue番号}_{タスク名}/README.md)
+- [設計書](docs/app/{issue番号}_{タスク名}/design.md)
 ```
 
 ## ラベル
