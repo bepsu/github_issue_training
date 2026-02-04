@@ -158,3 +158,21 @@ gh issue edit 42 --repo "$REPO" --body "$(gh issue view 42 --repo "$REPO" --json
 - [SETUP.md](docs/task-management/SETUP.md) - 初期セットアップ手順
 - [COMMANDS.md](docs/task-management/COMMANDS.md) - ghコマンドリファレンス
 - [WORKFLOW.md](docs/task-management/WORKFLOW.md) - タスク選択・実行ガイド詳細
+
+---
+
+## 進捗メモ（2026-02-04 更新）
+
+### 完了タスク
+- [x] #1 プライム・ブレインズ社を調査する → [調査レポート](docs/research/1_prime-brains-research/README.md)
+
+### 次にやるべきタスク（優先順）
+1. **#2 本番環境のセキュリティ監査を実施する** - High, 期限超過
+2. **#3 新規APIエンドポイントの設計** - High
+3. #4 ユーザーマニュアルを更新する - Medium, 期限超過
+4. #5 テストカバレッジを改善する - Medium
+5. #6 開発環境のDockerイメージを最適化 - Low
+
+### メモ
+- サンプルタスク（#2〜#6）はテスト用に作成したもの
+- 実際のタスクを追加する場合は「タスクを作成して」と依頼
